@@ -1,11 +1,481 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>bootstrap atsiskaitymas</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary pe-5 w-100 position-fixed">
+            <div class="background1"></div>
+            <a class="navbar-brand ps-5" href="#"><strong>Valgykla</strong> </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            <strong>Home</strong>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#sventinesvakar">Šventines vakarienes</a></li>
+                            <li><a class="dropdown-item" href="#sefai">Šefai</a></li>
+                            <li><a class="dropdown-item" href="#akordionas">kerjera</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#susisiekimas">kontaktai</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#dienospietus"><strong>Dienos
+                                pietus</strong></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./menu.html"><strong>Meniu</strong></a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success bg-black" type="submit">Search</button>
+                </form>
+            </div>
+            </div>
+        </nav>
+    </header>
+    <!-----restoranai------------------------------  -->
+    <main>
+        <h1 class="text-center mt-5">Restoranai</h1>
+        <section class="restoranai">
+
+            <article class="card mb-0 px-5 pt-5">
+                <div class="row g-0">
+                    <div class="col-md-4">
+                        <img class="image1" src="./photo/restoranas1.png" class="img-fluid rounded-start" alt="...">
+                    </div>
+                    <div class="col-md-8 d-flex align-items-center">
+                        <div class="card-body">
+                            <h5 class="card-title"></h5>
+                            <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting
+                                industry.
+                                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an
+                                unknown printer took a galley of type and scrambled it to make a type specimen book. It
+                                has
+                                survived not only five centuries, but also the leap into electronic typesetting,
+                                remaining
+                                essentially unchanged. It was popularised in the 1960s with the release of Letraset
+                                sheets
+                                containing Lorem Ipsum passages, and more recently with desktop publishing software like
+                                Aldus PageMaker including versions of Lorem Ipsum.</p>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <article class="card mb-0 px-5 pt-5">
+                <div class="row g-0">
+                    <div class="col-md-4 order-md-2 col-lg-4 order-lg-2">
+                        <img class="image1" src="./photo/restoranas4.png" class="img-fluid rounded-start" alt="...">
+                    </div>
+                    <div class="col-md-8 order-md-1 col-lg-8 order-lg-1 d-flex align-items-center">
+                        <div class="card-body">
+                            <h5 class="card-title"></h5>
+                            <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting
+                                industry.
+                                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an
+                                unknown printer took a galley of type and scrambled it to make a type specimen book. It
+                                has
+                                survived not only five centuries and more recently with desktop publishing software like
+                                Aldus PageMaker including versions of Lorem Ipsum.</p>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <article class="card mb-0 px-5 pt-5 mb-0">
+                <div class="row g-0">
+                    <div class="col-md-4">
+                        <img class="image1" src="./photo/restoranas3.png" class="img-fluid rounded-start" alt="...">
+                    </div>
+                    <div class="col-md-8 d-flex align-items-center">
+                        <div class="card-body">
+                            <h5 class="card-title"></h5>
+                            <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting
+                                industry.
+                                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an
+                                unknown printer took a galley of type and scrambled it to make a type specimen book. It
+                                has
+                                survived not only five centuries, but also the leap into electronic typesetting,
+                                remaining
+                                essentially unchanged. It was popularised in the 1960s with the release of Letraset
+                                sheets
+                                containing Lorem Ipsum passages, and more recently with desktop publishing software like
+                                Aldus PageMaker including versions of Lorem Ipsum.</p>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <article class="card mb-0 px-5 pt-5">
+                <div class="row g-0">
+                    <div class="col-md-4 order-md-2 col-lg-4 order-lg-2">
+                        <img class="image1" src="./photo/restoranas2.png" class="img-fluid rounded-start" alt="...">
+                    </div>
+                    <div class="col-md-8 order-md-1 col-lg-8 order-lg-1 d-flex align-items-center">
+                        <div class="card-body">
+                            <h5 class="card-title"></h5>
+                            <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting
+                                industry.
+                                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an
+                                unknown printer took a galley of type and scrambled it to make a type specimen book. It
+                                has
+                                survived not only five centuries, but also the leap into electronic typesetting,
+                                remaining
+                                essentially unchanged. It was popularised in the 1960s with the release of Letraset
+                                sheets
+                                containing Lorem Ipsum passages, and more recently with desktop publishing software like
+                                Aldus PageMaker including versions of Lorem Ipsum.</p>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </section>
+        <!-- pirma eile dienos pietu-------------- -->
+        <h2 class="text-center my-5" id="dienospietus">dienos pietūs</h2>
+        <section class="d-sm-flex-column d-md-flex d-lg-flex mx-5 gap-5">
+            <article class="card" style="width: 100%;">
+                <img src="./photo/ramen.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">ramen</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
+                    <div class="d-flex justify-content-between">
+                        <p>7.5€</p>
+                        <a href="#" class="btn btn-secondary">order</a>
+                    </div>
+                </div>
+            </article>
+            <article class="card" style="width: 100%;">
+                <img src="./photo/ramen.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">ramen</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
+                    <div class="d-flex justify-content-between">
+                        <p>7.5€</p>
+                        <a href="#" class="btn btn-secondary">order</a>
+                    </div>
+                </div>
+            </article>
+            <article class="card" style="width: 100%;">
+                <img src="./photo/ramen.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">ramen</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
+                    <div class="d-flex justify-content-between">
+                        <p>7.5€</p>
+                        <a href="#" class="btn btn-secondary">order</a>
+                    </div>
+                </div>
+            </article>
+        </section>
+        <!-- antra eile dienos pietu -->
+        <section class="d-sm-flex-column d-md-flex d-lg-flex mx-5 gap-5 mb-5">
+            <article class="card" style="width: 100%;">
+                <img src="./photo/pasta2.png" class="card-img-top " alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">pasta</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
+                    <div class="d-flex justify-content-between">
+                        <p>7.5€</p>
+                        <a href="#" class="btn btn-secondary">order</a>
+                    </div>
+                </div>
+            </article>
+            <article class="card" style="width: 100%;">
+                <img src="./photo/pasta2.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">pasta</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
+                    <div class="d-flex justify-content-between">
+                        <p>7.5€</p>
+                        <a href="#" class="btn btn-secondary">order</a>
+                    </div>
+                </div>
+            </article>
+            <article class="card" style="width: 100%;">
+                <img src="./photo/pasta2.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">pasta</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
+                    <div class="d-flex justify-content-between">
+                        <p>7.5€</p>
+                        <a href="#" class="btn btn-secondary">order</a>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+        <!-- sventines vakarienes---------------- -->
+        <h2 class="text-center" id="sventinesvakar">Šventinės vakarienės</h2>
+        <section class="mx-5 overflow-hidden">
+            <article id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner karusele">
+                    <div class="carousel-item active h-100">
+                        <img src="./photo/karusele4.png" class="d-block w-100" alt="..." style="height: 100%;">
+                    </div>
+                    <div class="carousel-item active h-100">
+                        <img src="./photo/karusele2.png" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item active h-100">
+                        <img src="./photo/karusele3.png" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item active h-100">
+                        <img src="./photo/karusele4.png" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item active h-100">
+                        <img src="./photo/karusele2.png" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item active h-100">
+                        <img src="./photo/karusele.png" class="d-block w-100" alt="...">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </article>
+            <article>
+                <p>took a galley of type and scrambled it to make a type specimen book. It has
+                    survived not only five centuries, but also the leap into electronic typesetting, remaining
+                    essentially unchanged.</p>
+                <p>took a galley of type and scrambled it to make a type specimen book. It has
+                    survived not only five centuries, but also the leap into electronic typesetting, remaining
+                    essentially unchanged.</p>
+                <p>took a galley of type and scrambled it to make a type specimen book. It has
+                    survived not only five centuries, but also the leap into electronic typesetting, remaining
+                    essentially unchanged.</p>
+                <p>took a galley of type and scrambled it to make a type specimen book. It has
+                    survived not only five centuries, but also the leap into electronic typesetting, remaining
+                    essentially unchanged.</p>
+                <p>took a galley of type and scrambled it to make a type specimen book. It has
+                    survived not only five centuries, but also the leap into electronic typesetting, remaining
+                    essentially unchanged.</p>
+                <p>took a galley of type and scrambled it to make a type specimen book. It has
+                    survived not only five centuries, but also the leap into electronic typesetting, remaining
+                    essentially unchanged.</p>
+                <p>took a galley of type and scrambled it to make a type specimen book. It has
+                    survived not only five centuries, but also the leap into electronic typesetting, remaining
+                    essentially unchanged.</p>
+                <p>took a galley of type and scrambled it to make a type specimen book. It has
+                    survived not only five centuries, but also the leap into electronic typesetting, remaining
+                    essentially unchanged.</p>
+
+            </article>
+        </section>
+        <!-- sefai-------------------- -->
+        <h2 class="text-center" id="sefai">Šefai</h2>
+        <section class="mx-5 row">
+            <article class="card col-md-4">
+                <img src="./photo/chef1.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h3>chef1</h3>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
+                </div>
+            </article>
+            <article class="card col-md-4">
+                <img src="./photo/chef2.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h3>chef2</h3>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
+                </div>
+            </article>
+            <article class="card col-md-4">
+                <img src="./photo/chef1.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h3>chef1</h3>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
+                </div>
+            </article>
+        </section>
+        <!-- akordionas---------------------- -->
+        <h2 class="text-center my-5" id="akordionas">Tapkite komandos dalimi</h2>
+        <section class="mx-5">
+            <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            Accordion Item
+                          </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <p>took a galley of type and scrambled it to make a type specimen book. It has survived not
+                                only five centuries, but also the leap into electronic typesetting, remaining
+                                essentially unchanged.</p>
+                            <div class="d-flex justify-content-end">
+                                <button class="bg-secondary text-white w-25">Apply now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            Accordion Item
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <p>took a galley of type and scrambled it to make a type specimen book. It has survived not
+                                only five centuries, but also the leap into electronic typesetting, remaining
+                                essentially unchanged.</p>
+                            <div class="d-flex justify-content-end">
+                                <button class="bg-secondary text-white w-25">Apply now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            Accordion Item
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <p>took a galley of type and scrambled it to make a type specimen book. It has survived not
+                                only five centuries, but also the leap into electronic typesetting, remaining
+                                essentially unchanged.</p>
+                            <div class="d-flex justify-content-end">
+                                <button class="bg-secondary text-white w-25">Apply now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- susisiekimas----------------------------------- -->
+        <h2 class="text-center my-5" id="susisiekimas">Sussiiekite su mumis</h2>
+        <section class="mx-5 mb-5 row">
+            <article class="col-md-4 d-none d-md-block">
+                <img src="./photo/bottom.png" alt="bottom">
+            </article>
+            <form class="col-md-4" action="">
+                <p class="mb-1">Name</p>
+                <input class="w-100 border-bottom-0 border-start-0 border-secondary-subtle" type="text">
+                <p class="mt-2 mb-1">Email addres</p>
+                <input class="w-100  border-bottom-0 border-start-0 border-secondary-subtle" type="email">
+                <p class="mt-2 mb-1">Comments</p>
+                <textarea class="w-100 border-bottom-0 border-start-0 border-secondary-subtle" id="" rows="8"
+                    placeholder="Leve comment here"></textarea>
+                <button class="w-100 bg-primary text-white rounded-2">Submit</button>
+            </form>
+
+            <div class="col-md-4 d-none d-md-block">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d18355.765870766834!2d23.91184381830732!3d54.89465959330678!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46e72276dd555557%3A0x2bf3519be19be30c!2sKauno%20Informacini%C5%B3%20technologij%C5%B3%20mokykla!5e0!3m2!1slt!2slt!4v1698399584174!5m2!1slt!2slt"
+                    width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </section>
+    </main>
+    <!-- footer------------------------------- -->
+    <footer>
+        <div class="background2"></div>
+        <section class="mx-5 row">
+            <article class="col-12 text-center text-md-start  col-md-4">
+                <p class="my-0"><span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-hourglass" viewBox="0 0 16 16">
+                            <path
+                                d="M2 1.5a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-1v1a4.5 4.5 0 0 1-2.557 4.06c-.29.139-.443.377-.443.59v.7c0 .213.154.451.443.59A4.5 4.5 0 0 1 12.5 13v1h1a.5.5 0 0 1 0 1h-11a.5.5 0 1 1 0-1h1v-1a4.5 4.5 0 0 1 2.557-4.06c.29-.139.443-.377.443-.59v-.7c0-.213-.154-.451-.443-.59A4.5 4.5 0 0 1 3.5 3V2h-1a.5.5 0 0 1-.5-.5zm2.5.5v1a3.5 3.5 0 0 0 1.989 3.158c.533.256 1.011.791 1.011 1.491v.702c0 .7-.478 1.235-1.011 1.491A3.5 3.5 0 0 0 4.5 13v1h7v-1a3.5 3.5 0 0 0-1.989-3.158C8.978 9.586 8.5 9.052 8.5 8.351v-.702c0-.7.478-1.235 1.011-1.491A3.5 3.5 0 0 0 11.5 3V2h-7z" />
+                        </svg></span>
+                    <strong>darbo laikas 10-23val</strong>
+                </p>
+                <p><span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                            <path
+                                d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z" />
+                        </svg></span><strong> laisves al. 0.0 Kaunas</strong></p>
+                <div class="d-none d-md-block">
+                    <p class="mt-4"><span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                fill="currentColor" class="bi bi-info-circle-fill" viewBox="0 0 16 16">
+                                <path
+                                    d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2z" />
+                            </svg></span>
+                        <strong> reksviszitai:</strong>
+                    </p>
+                    <p class="my-0 ms-4">UAB "lorem ipsum"</p>
+                    <p class="my-0 ms-4">LT000000000000</p>
+                    <p class="mt-0 mb-3 ms-4">Lorem ipsum color, sit amet</p>
+                </div>
+            </article>
+            <article
+                class="col-12 col-md-4 d-flex justify-content-center justify-content-md-center align-items-center gap-2">
+                <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor"
+                        class="bi bi-facebook" viewBox="0 0 16 16">
+                        <path
+                            d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
+                    </svg></a>
+                <a href=""><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="#1DA1F2"
+                        class="bi bi-twitter" viewBox="0 0 16 16">
+                        <path
+                            d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z" />
+                    </svg></a>
+                <a href=""><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor"
+                        class="bi bi-linkedin" viewBox="0 0 16 16">
+                        <path
+                            d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z" />
+                    </svg></a>
+                <a href=""><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="grey"
+                        class="bi bi-envelope-fill" viewBox="0 0 16 16">
+                        <path
+                            d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555ZM0 4.697v7.104l5.803-3.558L0 4.697ZM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757Zm3.436-.586L16 11.801V4.697l-5.803 3.546Z" />
+                    </svg></a>
+            </article>
+            <article class="col-12 col-md-4 d-flex justify-content-center  justify-content-md-end align-items-center">
+                <p><span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-c-circle" viewBox="0 0 16 16">
+                            <path
+                                d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8Zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0ZM8.146 4.992c-1.212 0-1.927.92-1.927 2.502v1.06c0 1.571.703 2.462 1.927 2.462.979 0 1.641-.586 1.729-1.418h1.295v.093c-.1 1.448-1.354 2.467-3.03 2.467-2.091 0-3.269-1.336-3.269-3.603V7.482c0-2.261 1.201-3.638 3.27-3.638 1.681 0 2.935 1.054 3.029 2.572v.088H9.875c-.088-.879-.768-1.512-1.729-1.512Z" />
+                        </svg></span>All rights reserved 2023</p>
+            </article>
+        </section>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>

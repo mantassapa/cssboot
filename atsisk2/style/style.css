@@ -1,23 +1,243 @@
-.containertop {
-  animation: top;
+.container__top {
+  background-color: black;
+  animation: topbox 15s infinite;
+}
+@keyframes topbox {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+.container__sun {
+  animation: sune 15s infinite;
+}
+@keyframes sune {
+  0% {
+    margin-top: 300px;
+    margin-left: -150px;
+  }
+  70% {
+    margin-top: 10px;
+    margin-left: 200px;
+  }
+  100% {
+    margin-top: 10px;
+    margin-left: 200px;
+  }
+}
+.container__inside h1 {
+  animation: texte 15s infinite;
+}
+@keyframes texte {
+  0% {
+    opacity: 0;
+  }
+  70% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.container__bottom__flower-one {
+  animation: flone 15s infinite;
+}
+@keyframes flone {
+  0% {
+    height: 0%;
+  }
+  70% {
+    height: 50%;
+  }
+  100% {
+    height: 50%;
+  }
+}
+.container__bottom__flower-one--top {
+  animation: toper 15s infinite;
+}
+@keyframes toper {
+  0% {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(0);
+  }
+  70% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.container__bottom__flower-one__lap {
+  animation: lopa 15s infinite;
+}
+@keyframes lopa {
+  0% {
+    transform: scale(0);
+  }
+  60% {
+    transform: scale(0);
+  }
+  70% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.container__bottom__flower-two {
+  animation: flon 15s infinite;
+}
+@keyframes flon {
+  0% {
+    height: 0%;
+  }
+  70% {
+    height: 45%;
+  }
+  100% {
+    height: 45%;
+  }
+}
+.container__bottom__flower-three {
+  animation: flones 15s infinite;
+}
+@keyframes flones {
+  0% {
+    height: 0%;
+  }
+  70% {
+    height: 70%;
+  }
+  100% {
+    height: 70%;
+  }
 }
 
 .container {
+  position: relative;
+}
+.container__top {
+  position: absolute;
   margin: 0px;
   padding: 0px;
   width: 100%;
-  height: 70rem;
-  background-color: black;
+  height: 100%;
+  z-index: 2;
+}
+.container__sun {
+  position: absolute;
+  margin-top: 10px;
+  margin-left: 200px;
+  width: 100px;
+  height: 100px;
+  background-color: yellow;
+  border-radius: 50px;
+  z-index: 1;
+}
+.container__inside {
+  position: absolute;
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(22, 215, 206);
   display: flex;
   justify-content: center;
 }
-.container h1 {
+.container__inside h1 {
   margin-top: 300px;
   color: white;
   font-size: 10em;
+  z-index: 3;
 }
-.containersun {
-  width: 50px;
+.container__bottom {
+  position: absolute;
+  margin-bottom: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: 5;
+  background-color: rgba(255, 0, 0, 0);
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 25%;
+  z-index: 2;
+}
+.container__bottom__flower-one {
+  height: 50%;
+  width: 25px;
+  background-color: green;
+  border-radius: 15px;
+  justify-content: center;
+  overflow: visible;
+  position: relative;
+}
+.container__bottom__flower-one--top {
+  position: absolute;
+  margin-top: -12.5px;
+  margin-left: -12.5px;
+  border-radius: 30px;
   height: 50px;
+  width: 50px;
   background-color: yellow;
+  z-index: 2;
+}
+.container__bottom__flower-one__lap {
+  position: absolute;
+  background-color: rgba(255, 0, 0, 0);
+  margin-top: -37.5px;
+  margin-left: -37.5px;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  z-index: 1;
+}
+.container__bottom__flower-one__lap--la1 {
+  width: 50%;
+  height: 50%;
+  background-color: violet;
+  border-radius: 5px 50px 5px 50px;
+}
+.container__bottom__flower-one__lap--la2 {
+  width: 50%;
+  height: 50%;
+  background-color: red;
+  border-radius: 50px 5px 50px 50px;
+}
+.container__bottom__flower-one__lap--la3 {
+  width: 50%;
+  height: 50%;
+  background-color: red;
+  border-radius: 50px 50px 50px 5px;
+}
+.container__bottom__flower-one__lap--la4 {
+  width: 50%;
+  height: 50%;
+  background-color: violet;
+  border-radius: 5px 50px 5px 50px;
+}
+.container__bottom__flower-two {
+  height: 45%;
+  width: 25px;
+  background-color: green;
+  border-radius: 15px;
+  justify-content: center;
+  overflow: visible;
+  position: relative;
+}
+.container__bottom__flower-three {
+  height: 70%;
+  width: 25px;
+  background-color: green;
+  border-radius: 15px;
+  justify-content: center;
+  overflow: visible;
+  position: relative;
 }/*# sourceMappingURL=style.css.map */

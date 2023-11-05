@@ -1,0 +1,84 @@
+.container{
+    &__top{
+        background-color: black;
+        animation: topbox 15s infinite;
+
+        @keyframes topbox{
+            0%{opacity: 1;}
+            100%{opacity: 0;}
+        }
+    }
+    &__sun{
+        animation: sune 15s infinite;
+
+        @keyframes sune{
+            0%{margin-top: 300px; margin-left: -150px;}
+            70%{margin-top: 10px; margin-left: 200px;}
+            100%{margin-top: 10px; margin-left: 200px;}
+        }
+    }
+    &__inside{
+        h1{
+            animation: texte 15s infinite;
+
+            @keyframes texte{
+                0%{opacity: 0;}
+                70%{opacity: 0;}
+                100%{opacity: 1;}
+            }
+        }
+    }
+    &__bottom{
+        
+        &__flower-one{
+            animation: flone 15s infinite;
+
+            @keyframes flone{
+                0%{height:0%;}
+                70%{height: 50%;}
+                100%{height: 50%;}
+            }
+            &--top{
+                animation: toper 15s infinite;
+                
+                @keyframes toper{
+                    0%{transform: scale(0);}
+                    50%{transform: scale(0);}
+                    70%{transform: scale(1);}
+                    100%{transform: scale(1);}
+                }
+            }
+
+            &__lap{
+                animation: lopa 15s infinite;
+
+                @keyframes lopa{
+                    0%{transform: scale(0);}
+                    60%{transform: scale(0);}
+                    70%{transform: scale(1);}
+                    100%{transform: scale(1);}
+                }
+            }
+        }
+        &__flower-two{
+            animation: flon 15s infinite;
+    
+            @keyframes flon{
+                0%{height:0%;}
+                70%{height: 45%;}
+                100%{height: 45%;}
+            }
+        }
+        &__flower-three{
+            animation: flones 15s infinite;
+        
+            @keyframes flones{
+                0%{height:0%;}
+                70%{height: 70%;}
+                100%{height: 70%;}
+            }
+        }
+        
+        
+    }
+}

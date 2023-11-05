@@ -1,0 +1,138 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background: #0a0909;
+  overflow: hidden;
+}
+
+.box {
+  width: 100%;
+  height: 50px;
+  background-color: red;
+  display: flex;
+  justify-content: end;
+  z-index: 0;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  z-index: 2;
+}
+
+.main {
+  text-align: center;
+  width: 100%;
+  height: 100%;
+}
+
+.hamburger {
+  margin-top: -10px;
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+  padding: 20px;
+  right: 0px;
+}
+.hamburger:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 20px;
+  background: rgba(249, 83, 199, 0);
+  transform: rotate(0deg);
+  transition: all 0.4s cubic-bezier(0.54, -0.1, 0.57, 0.57);
+}
+.hamburger .hamburger-input {
+  position: absolute;
+  opacity: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  cursor: pointer;
+}
+.hamburger .hamburger-line {
+  width: 100%;
+  background: #ffffff;
+  height: 2px;
+  display: block;
+  border-radius: 6px;
+  transition: transform 0.4s cubic-bezier(0.54, -0.81, 0.57, 0.57);
+  position: relative;
+}
+.hamburger .hamburger-line.first, .hamburger .hamburger-line.third {
+  width: 50%;
+}
+.hamburger .hamburger-line.third {
+  margin-left: 50%;
+  transform-origin: left;
+}
+
+.menu-button-wrapper {
+  position: absolute;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  right: 0px;
+}
+.menu-button-wrapper .item-list {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 25px;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  right: 0px;
+  transform: scaleY(0);
+  transform-origin: 100% 0%;
+  transition: all 1s;
+  background-color: rgba(33, 34, 45, 0.768627451);
+  color: #fff;
+  opacity: 0;
+  z-index: 1;
+}
+.menu-button-wrapper .item-list p {
+  cursor: pointer;
+  font-size: 2em;
+}
+.menu-button-wrapper .menu-button {
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  right: 0;
+  z-index: 3;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.menu-button:checked ~ .item-list {
+  transform: scaleY(1);
+  transform-origin: 100% 0%;
+  opacity: 2;
+  -webkit-user-select: auto;
+     -moz-user-select: auto;
+          user-select: auto;
+}
+.menu-button:checked ~ .icon-wrapper .hamburger-line.second {
+  transform: rotate(-45deg);
+}
+.menu-button:checked ~ .icon-wrapper .hamburger-line.first {
+  transform: translate(2px, 8px) rotate(-135deg);
+}
+.menu-button:checked ~ .icon-wrapper .hamburger-line.third {
+  transform: translate(11px, -3px) rotate(-135deg);
+}
+.menu-button:checked ~ .icon-wrapper .hamburger:before {
+  transform: rotate(45deg);
+}/*# sourceMappingURL=style.css.map */
